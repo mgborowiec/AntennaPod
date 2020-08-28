@@ -16,11 +16,11 @@ import java.util.List;
 import androidx.test.espresso.intent.rule.IntentsTestRule;
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.activity.MainActivity;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.storage.DBReader;
-import de.danoeh.antennapod.fragment.EpisodesFragment;
+import com.mborowiec.antennapod.R;
+import com.mborowiec.antennapod.activity.MainActivity;
+import com.mborowiec.antennapod.core.feed.FeedItem;
+import com.mborowiec.antennapod.core.storage.DBReader;
+import com.mborowiec.antennapod.fragment.EpisodesFragment;
 import de.test.antennapod.EspressoTestUtils;
 import de.test.antennapod.ui.UITestUtils;
 

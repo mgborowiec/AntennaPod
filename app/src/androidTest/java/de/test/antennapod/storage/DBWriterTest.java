@@ -26,14 +26,14 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.storage.DBReader;
-import de.danoeh.antennapod.core.storage.DBWriter;
-import de.danoeh.antennapod.core.storage.PodDBAdapter;
-import de.danoeh.antennapod.core.util.FeedItemUtil;
+import com.mborowiec.antennapod.core.feed.Feed;
+import com.mborowiec.antennapod.core.feed.FeedItem;
+import com.mborowiec.antennapod.core.feed.FeedMedia;
+import com.mborowiec.antennapod.core.preferences.UserPreferences;
+import com.mborowiec.antennapod.core.storage.DBReader;
+import com.mborowiec.antennapod.core.storage.DBWriter;
+import com.mborowiec.antennapod.core.storage.PodDBAdapter;
+import com.mborowiec.antennapod.core.util.FeedItemUtil;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;

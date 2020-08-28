@@ -39,7 +39,7 @@
             android:layout_height="match_parent"
             android:background="?android:attr/windowBackground"
             android:visibility="gone"
-            app:layout_behavior="de.danoeh.antennapod.view.LockableBottomSheetBehavior" />
+            app:layout_behavior="com.mborowiec.antennapod.view.LockableBottomSheetBehavior" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

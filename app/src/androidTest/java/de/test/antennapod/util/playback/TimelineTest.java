@@ -12,11 +12,11 @@ import org.jsoup.select.Elements;
 import java.util.Date;
 import java.util.List;
 
-import de.danoeh.antennapod.core.feed.Chapter;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.util.playback.Playable;
-import de.danoeh.antennapod.core.util.playback.Timeline;
+import com.mborowiec.antennapod.core.feed.Chapter;
+import com.mborowiec.antennapod.core.feed.FeedItem;
+import com.mborowiec.antennapod.core.feed.FeedMedia;
+import com.mborowiec.antennapod.core.util.playback.Playable;
+import com.mborowiec.antennapod.core.util.playback.Timeline;
 import org.junit.Before;
 import org.junit.Test;
 

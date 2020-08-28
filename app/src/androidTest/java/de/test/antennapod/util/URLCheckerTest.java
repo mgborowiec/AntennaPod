@@ -1,7 +1,7 @@
 package de.test.antennapod.util;
 
 import androidx.test.filters.SmallTest;
-import de.danoeh.antennapod.core.util.URLChecker;
+import com.mborowiec.antennapod.core.util.URLChecker;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

@@ -5,11 +5,11 @@ import java.util.Arrays;
 import java.util.List;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import de.danoeh.antennapod.core.service.download.AntennapodHttpClient;
-import de.danoeh.antennapod.core.sync.gpoddernet.GpodnetService;
-import de.danoeh.antennapod.core.sync.gpoddernet.GpodnetServiceException;
-import de.danoeh.antennapod.core.sync.gpoddernet.model.GpodnetDevice;
-import de.danoeh.antennapod.core.sync.gpoddernet.model.GpodnetTag;
+import com.mborowiec.antennapod.core.service.download.AntennapodHttpClient;
+import com.mborowiec.antennapod.core.sync.gpoddernet.GpodnetService;
+import com.mborowiec.antennapod.core.sync.gpoddernet.GpodnetServiceException;
+import com.mborowiec.antennapod.core.sync.gpoddernet.model.GpodnetDevice;
+import com.mborowiec.antennapod.core.sync.gpoddernet.model.GpodnetTag;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;

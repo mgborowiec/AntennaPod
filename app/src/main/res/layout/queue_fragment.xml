@@ -32,7 +32,7 @@
         android:layout_below="@id/info_bar"
         android:background="?android:attr/listDivider"/>
 
-    <de.danoeh.antennapod.view.EpisodeItemListRecyclerView
+    <com.mborowiec.antennapod.view.EpisodeItemListRecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -1,7 +1,7 @@
 package de.test.antennapod.handler;
 
 import androidx.test.filters.SmallTest;
-import de.danoeh.antennapod.core.feed.Feed;
+import com.mborowiec.antennapod.core.feed.Feed;
 import de.test.antennapod.util.syndication.feedgenerator.AtomGenerator;
 import org.junit.Test;
 import org.xmlpull.v1.XmlSerializer;

@@ -1,9 +1,9 @@
 package de.test.antennapod.handler;
 
 import androidx.test.filters.SmallTest;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.feed.MediaType;
-import de.danoeh.antennapod.core.syndication.namespace.NSMedia;
+import com.mborowiec.antennapod.core.feed.Feed;
+import com.mborowiec.antennapod.core.feed.MediaType;
+import com.mborowiec.antennapod.core.syndication.namespace.NSMedia;
 import de.test.antennapod.util.syndication.feedgenerator.Rss2Generator;
 import org.junit.Test;
 import org.xmlpull.v1.XmlSerializer;

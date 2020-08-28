@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.activity;
+package com.mborowiec.antennapod.activity;
 
 import android.content.SharedPreferences;
 import android.media.AudioManager;
@@ -11,14 +11,14 @@ import android.view.MenuItem;
 
 import com.google.android.gms.cast.ApplicationMetadata;
 
-import de.danoeh.antennapod.R;
-import de.danoeh.antennapod.core.cast.CastButtonVisibilityManager;
-import de.danoeh.antennapod.core.cast.CastConsumer;
-import de.danoeh.antennapod.core.cast.CastManager;
-import de.danoeh.antennapod.core.cast.DefaultCastConsumer;
-import de.danoeh.antennapod.core.cast.SwitchableMediaRouteActionProvider;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.service.playback.PlaybackService;
+import com.mborowiec.antennapod.R;
+import com.mborowiec.antennapod.core.cast.CastButtonVisibilityManager;
+import com.mborowiec.antennapod.core.cast.CastConsumer;
+import com.mborowiec.antennapod.core.cast.CastManager;
+import com.mborowiec.antennapod.core.cast.DefaultCastConsumer;
+import com.mborowiec.antennapod.core.cast.SwitchableMediaRouteActionProvider;
+import com.mborowiec.antennapod.core.preferences.UserPreferences;
+import com.mborowiec.antennapod.core.service.playback.PlaybackService;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -5,13 +5,13 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
-import de.danoeh.antennapod.core.feed.Chapter;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.feed.SimpleChapter;
-import de.danoeh.antennapod.core.storage.PodDBAdapter;
-import de.danoeh.antennapod.core.util.comparator.FeedItemPubdateComparator;
+import com.mborowiec.antennapod.core.feed.Chapter;
+import com.mborowiec.antennapod.core.feed.Feed;
+import com.mborowiec.antennapod.core.feed.FeedItem;
+import com.mborowiec.antennapod.core.feed.FeedMedia;
+import com.mborowiec.antennapod.core.feed.SimpleChapter;
+import com.mborowiec.antennapod.core.storage.PodDBAdapter;
+import com.mborowiec.antennapod.core.util.comparator.FeedItemPubdateComparator;
 
 import static org.junit.Assert.assertTrue;
 

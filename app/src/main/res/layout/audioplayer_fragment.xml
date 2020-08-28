@@ -15,7 +15,7 @@
             app:navigationIcon="?homeAsUpIndicator"
             android:id="@+id/toolbar"/>
 
-    <de.danoeh.antennapod.view.PagerIndicatorView
+    <com.mborowiec.antennapod.view.PagerIndicatorView
             android:id="@+id/page_indicator"
             android:layout_height="16dp"
             android:layout_width="40dp"
@@ -127,7 +127,7 @@
                     android:scaleType="fitCenter"
                     tools:srcCompat="@drawable/ic_av_play_white_24dp"/>
 
-            <de.danoeh.antennapod.view.CircularProgressBar
+            <com.mborowiec.antennapod.view.CircularProgressBar
                     android:layout_width="@dimen/audioplayer_playercontrols_length_big"
                     android:layout_height="@dimen/audioplayer_playercontrols_length_big"
                     android:layout_marginLeft="16dp"
@@ -176,7 +176,7 @@
                     android:textColor="?android:attr/textColorSecondary"
                     android:clickable="false"/>
 
-            <de.danoeh.antennapod.view.PlaybackSpeedIndicatorView
+            <com.mborowiec.antennapod.view.PlaybackSpeedIndicatorView
                     android:id="@+id/butPlaybackSpeed"
                     android:layout_width="@dimen/audioplayer_playercontrols_length"
                     android:layout_height="@dimen/audioplayer_playercontrols_length"

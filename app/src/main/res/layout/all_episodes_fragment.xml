@@ -16,7 +16,7 @@
         android:visibility="gone"
         tools:text="(i) Information" />
 
-    <de.danoeh.antennapod.view.EpisodeItemListRecyclerView
+    <com.mborowiec.antennapod.view.EpisodeItemListRecyclerView
         android:id="@android:id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

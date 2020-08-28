@@ -2,12 +2,12 @@ package de.test.antennapod.ui;
 
 import android.content.Context;
 import android.util.Log;
-import de.danoeh.antennapod.core.event.FeedListUpdateEvent;
-import de.danoeh.antennapod.core.event.QueueEvent;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.storage.PodDBAdapter;
+import com.mborowiec.antennapod.core.event.FeedListUpdateEvent;
+import com.mborowiec.antennapod.core.event.QueueEvent;
+import com.mborowiec.antennapod.core.feed.Feed;
+import com.mborowiec.antennapod.core.feed.FeedItem;
+import com.mborowiec.antennapod.core.feed.FeedMedia;
+import com.mborowiec.antennapod.core.storage.PodDBAdapter;
 import de.test.antennapod.util.service.download.HTTPBin;
 import de.test.antennapod.util.syndication.feedgenerator.Rss2Generator;
 import org.apache.commons.io.FileUtils;
