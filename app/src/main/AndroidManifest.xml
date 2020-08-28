@@ -104,17 +104,17 @@
                 <data android:scheme="http" />
                 <data android:scheme="https" />
             </intent-filter>
-        </activity> <!-- Version < 3.0. DeX Mode and Screen Mirroring support -->
+        </activity>
         <activity
             android:name=".activity.OpmlFeedChooserActivity"
-            android:label="@string/opml_import_label" /> <!-- Version >= 3.0. DeX Dual Mode support -->
+            android:label="@string/opml_import_label" /> <!-- Version < 3.0. DeX Mode and Screen Mirroring support -->
         <activity
             android:name=".activity.BugReportActivity"
             android:label="@string/bug_report_title">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mborowiec.antennapod.activity.PreferenceActivity" />
-        </activity>
+        </activity> <!-- Version >= 3.0. DeX Dual Mode support -->
         <activity
             android:name=".activity.VideoplayerActivity"
             android:configChanges="keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize"
@@ -238,6 +238,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mborowiec.antennapod.activity.PreferenceActivity" />
         </activity>
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/actions" />
 
         <meta-data
             android:name="android.webkit.WebView.MetricsOptOut"
