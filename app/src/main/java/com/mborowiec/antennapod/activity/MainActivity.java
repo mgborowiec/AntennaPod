@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -52,6 +53,7 @@ import org.apache.commons.lang3.Validate;
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
+import java.util.Objects;
 
 /**
  * The activity that is shown when the user launches the app.
@@ -139,6 +141,9 @@ public class MainActivity extends CastEnabledActivity {
         sheetBehavior.setPeekHeight((int) getResources().getDimension(R.dimen.external_player_height));
         sheetBehavior.setHideable(false);
         sheetBehavior.setBottomSheetCallback(bottomSheetCallback);
+
+        Intent receivedIntent = getIntent();
+        handleIntent(receivedIntent);
     }
 
     private BottomSheetBehavior.BottomSheetCallback bottomSheetCallback =
@@ -490,6 +495,22 @@ public class MainActivity extends CastEnabledActivity {
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
         setIntent(intent);
+
+        handleIntent(intent);
+    }
+
+    /**
+     * Checks whether the activity was launched via a deep link.
+     *
+     * @param intent incoming intent
+     */
+    private void handleIntent(Intent intent) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            if (Objects.equals(intent.getAction(), Intent.ACTION_VIEW)) {
+                Uri uri = intent.getData();
+                if (uri != null) handleDeeplink(uri);
+            }
+        }
     }
 
     public Snackbar showSnackbarAbovePlayer(CharSequence text, int duration) {
@@ -508,5 +529,43 @@ public class MainActivity extends CastEnabledActivity {
 
     public Snackbar showSnackbarAbovePlayer(int text, int duration) {
         return showSnackbarAbovePlayer(getResources().getText(text), duration);
+    }
+
+    /**
+     * Handles the incoming deep link and loads the relevant fragment.
+     * By default, opens the "Add Podcast" feature.
+     *
+     * @param uri incoming deep link
+     */
+    private void handleDeeplink(Uri uri) {
+       if (uri == null) {
+           loadFragment(AddFeedFragment.TAG, null);
+           return;
+       }
+
+        String feature = uri.getQueryParameter("featureName");
+        if(feature != null) {
+            feature = feature.toLowerCase();
+            switch (feature) {
+                case "downloads":
+                    loadFragment(DownloadsFragment.TAG, null);
+                    break;
+                case "history":
+                    loadFragment(PlaybackHistoryFragment.TAG, null);
+                    break;
+                case "episodes":
+                    loadFragment(EpisodesFragment.TAG, null);
+                    break;
+                case "queue":
+                    loadFragment(QueueFragment.TAG, null);
+                    break;
+                case "subscriptions":
+                    loadFragment(SubscriptionFragment.TAG, null);
+                    break;
+                default:
+                    loadFragment(AddFeedFragment.TAG, null);
+            }
+        }
+        else loadFragment(AddFeedFragment.TAG, null);
     }
 }
