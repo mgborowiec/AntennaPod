@@ -544,8 +544,9 @@ public class MainActivity extends CastEnabledActivity {
     }
 
     /**
-     * Handles the deep link incoming via App Actions and according to the query
-     * either performs an in-app search or opens the relevant feature of the app.
+     * Handles the deep link incoming via App Actions.
+     * Performs an in-app search or opens the relevant feature of the app
+     * depending on the query.
      *
      * @param uri incoming deep link
      */
