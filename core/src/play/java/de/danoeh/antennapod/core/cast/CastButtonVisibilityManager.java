@@ -1,10 +1,10 @@
-package de.danoeh.antennapod.core.cast;
+package com.mborowiec.antennapod.core.cast;
 
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import androidx.core.view.MenuItemCompat;
-import de.danoeh.antennapod.core.R;
+import com.mborowiec.antennapod.core.R;
 
 public class CastButtonVisibilityManager {
     private static final String TAG = "CastBtnVisibilityMgr";

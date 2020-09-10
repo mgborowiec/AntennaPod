@@ -7,12 +7,12 @@ import java.util.Random;
 
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.filters.SmallTest;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.storage.DBReader;
-import de.danoeh.antennapod.core.storage.PodDBAdapter;
-import de.danoeh.antennapod.core.util.LongList;
+import com.mborowiec.antennapod.core.feed.Feed;
+import com.mborowiec.antennapod.core.feed.FeedItem;
+import com.mborowiec.antennapod.core.feed.FeedMedia;
+import com.mborowiec.antennapod.core.storage.DBReader;
+import com.mborowiec.antennapod.core.storage.PodDBAdapter;
+import com.mborowiec.antennapod.core.util.LongList;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

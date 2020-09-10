@@ -6,10 +6,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import androidx.test.filters.SmallTest;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.storage.DBTasks;
+import com.mborowiec.antennapod.core.feed.Feed;
+import com.mborowiec.antennapod.core.feed.FeedItem;
+import com.mborowiec.antennapod.core.preferences.UserPreferences;
+import com.mborowiec.antennapod.core.storage.DBTasks;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;

@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core;
+package com.mborowiec.antennapod.core;
 
 import android.content.Context;
 import android.content.Intent;
@@ -7,17 +7,17 @@ import com.google.android.gms.common.GoogleApiAvailability;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
 import com.google.android.gms.security.ProviderInstaller;
-import de.danoeh.antennapod.core.cast.CastManager;
-import de.danoeh.antennapod.core.preferences.PlaybackPreferences;
-import de.danoeh.antennapod.core.preferences.SleepTimerPreferences;
-import de.danoeh.antennapod.core.preferences.UsageStatistics;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.service.ProviderInstallerInterceptor;
-import de.danoeh.antennapod.core.service.download.AntennapodHttpClient;
-import de.danoeh.antennapod.core.storage.PodDBAdapter;
-import de.danoeh.antennapod.core.util.NetworkUtils;
-import de.danoeh.antennapod.core.util.exception.RxJavaErrorHandlerSetup;
-import de.danoeh.antennapod.core.util.gui.NotificationUtils;
+import com.mborowiec.antennapod.core.cast.CastManager;
+import com.mborowiec.antennapod.core.preferences.PlaybackPreferences;
+import com.mborowiec.antennapod.core.preferences.SleepTimerPreferences;
+import com.mborowiec.antennapod.core.preferences.UsageStatistics;
+import com.mborowiec.antennapod.core.preferences.UserPreferences;
+import com.mborowiec.antennapod.core.service.ProviderInstallerInterceptor;
+import com.mborowiec.antennapod.core.service.download.AntennapodHttpClient;
+import com.mborowiec.antennapod.core.storage.PodDBAdapter;
+import com.mborowiec.antennapod.core.util.NetworkUtils;
+import com.mborowiec.antennapod.core.util.exception.RxJavaErrorHandlerSetup;
+import com.mborowiec.antennapod.core.util.gui.NotificationUtils;
 
 import java.io.File;
 

@@ -1,11 +1,11 @@
-package de.danoeh.antennapod.core.cast;
+package com.mborowiec.antennapod.core.cast;
 
 import android.net.Uri;
 import android.text.TextUtils;
 import com.google.android.gms.cast.MediaInfo;
 import com.google.android.gms.cast.MediaMetadata;
 import com.google.android.gms.common.images.WebImage;
-import de.danoeh.antennapod.core.util.playback.RemoteMedia;
+import com.mborowiec.antennapod.core.util.playback.RemoteMedia;
 import java.util.Calendar;
 
 public class MediaInfoCreator {

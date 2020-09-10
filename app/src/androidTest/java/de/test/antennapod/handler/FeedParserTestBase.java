@@ -2,12 +2,12 @@ package de.test.antennapod.handler;
 
 import android.content.Context;
 import androidx.test.platform.app.InstrumentationRegistry;
-import de.danoeh.antennapod.core.feed.Chapter;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.syndication.handler.FeedHandler;
-import de.danoeh.antennapod.core.syndication.handler.UnsupportedFeedtypeException;
+import com.mborowiec.antennapod.core.feed.Chapter;
+import com.mborowiec.antennapod.core.feed.Feed;
+import com.mborowiec.antennapod.core.feed.FeedItem;
+import com.mborowiec.antennapod.core.feed.FeedMedia;
+import com.mborowiec.antennapod.core.syndication.handler.FeedHandler;
+import com.mborowiec.antennapod.core.syndication.handler.UnsupportedFeedtypeException;
 import de.test.antennapod.util.syndication.feedgenerator.FeedGenerator;
 import org.junit.After;
 import org.junit.Before;

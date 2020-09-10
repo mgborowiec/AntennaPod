@@ -5,10 +5,9 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
 import androidx.test.platform.app.InstrumentationRegistry;
-import androidx.test.filters.LargeTest;
 import androidx.test.filters.SmallTest;
-import de.danoeh.antennapod.core.feed.MediaType;
-import de.danoeh.antennapod.core.util.playback.ExternalMedia;
+import com.mborowiec.antennapod.core.feed.MediaType;
+import com.mborowiec.antennapod.core.util.playback.ExternalMedia;
 import org.junit.After;
 import org.junit.Test;
 

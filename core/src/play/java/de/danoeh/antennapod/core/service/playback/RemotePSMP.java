@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.service.playback;
+package com.mborowiec.antennapod.core.service.playback;
 
 import android.content.Context;
 import android.media.MediaPlayer;
@@ -15,7 +15,7 @@ import com.google.android.libraries.cast.companionlibrary.cast.exceptions.CastEx
 import com.google.android.libraries.cast.companionlibrary.cast.exceptions.NoConnectionException;
 import com.google.android.libraries.cast.companionlibrary.cast.exceptions.TransientNetworkDisconnectionException;
 
-import de.danoeh.antennapod.core.cast.MediaInfoCreator;
+import com.mborowiec.antennapod.core.cast.MediaInfoCreator;
 
 import java.util.Collections;
 import java.util.List;
@@ -23,17 +23,17 @@ import java.util.concurrent.Future;
 import java.util.concurrent.FutureTask;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import de.danoeh.antennapod.core.R;
-import de.danoeh.antennapod.core.cast.CastConsumer;
-import de.danoeh.antennapod.core.cast.CastManager;
-import de.danoeh.antennapod.core.cast.CastUtils;
-import de.danoeh.antennapod.core.cast.DefaultCastConsumer;
-import de.danoeh.antennapod.core.util.playback.RemoteMedia;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.feed.MediaType;
-import de.danoeh.antennapod.core.preferences.UserPreferences;
-import de.danoeh.antennapod.core.util.RewindAfterPauseUtils;
-import de.danoeh.antennapod.core.util.playback.Playable;
+import com.mborowiec.antennapod.core.R;
+import com.mborowiec.antennapod.core.cast.CastConsumer;
+import com.mborowiec.antennapod.core.cast.CastManager;
+import com.mborowiec.antennapod.core.cast.CastUtils;
+import com.mborowiec.antennapod.core.cast.DefaultCastConsumer;
+import com.mborowiec.antennapod.core.util.playback.RemoteMedia;
+import com.mborowiec.antennapod.core.feed.FeedMedia;
+import com.mborowiec.antennapod.core.feed.MediaType;
+import com.mborowiec.antennapod.core.preferences.UserPreferences;
+import com.mborowiec.antennapod.core.util.RewindAfterPauseUtils;
+import com.mborowiec.antennapod.core.util.playback.Playable;
 
 /**
  * Implementation of PlaybackServiceMediaPlayer suitable for remote playback on Cast Devices.
@@ -304,7 +304,7 @@ public class RemotePSMP extends PlaybackServiceMediaPlayer {
      * Internal implementation of playMediaObject. This method has an additional parameter that allows the caller to force a media player reset even if
      * the given playable parameter is the same object as the currently playing media.
      *
-     * @see #playMediaObject(de.danoeh.antennapod.core.util.playback.Playable, boolean, boolean, boolean)
+     * @see #playMediaObject(com.mborowiec.antennapod.core.util.playback.Playable, boolean, boolean, boolean)
      */
     private void playMediaObject(@NonNull final Playable playable, final boolean forceReset, final boolean stream, final boolean startWhenPrepared, final boolean prepareImmediately) {
         if (!CastUtils.isCastable(playable)) {

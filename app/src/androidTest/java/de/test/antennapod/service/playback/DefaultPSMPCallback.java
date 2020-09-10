@@ -2,9 +2,9 @@ package de.test.antennapod.service.playback;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.StringRes;
-import de.danoeh.antennapod.core.feed.MediaType;
-import de.danoeh.antennapod.core.service.playback.PlaybackServiceMediaPlayer;
-import de.danoeh.antennapod.core.util.playback.Playable;
+import com.mborowiec.antennapod.core.feed.MediaType;
+import com.mborowiec.antennapod.core.service.playback.PlaybackServiceMediaPlayer;
+import com.mborowiec.antennapod.core.util.playback.Playable;
 
 public class DefaultPSMPCallback implements PlaybackServiceMediaPlayer.PSMPCallback {
         @Override

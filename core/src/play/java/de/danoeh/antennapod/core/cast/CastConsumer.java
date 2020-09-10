@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.cast;
+package com.mborowiec.antennapod.core.cast;
 
 import com.google.android.libraries.cast.companionlibrary.cast.callbacks.VideoCastConsumer;
 

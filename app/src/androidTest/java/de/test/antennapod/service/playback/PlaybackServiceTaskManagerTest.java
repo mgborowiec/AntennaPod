@@ -5,7 +5,7 @@ import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.annotation.UiThreadTest;
 import androidx.test.filters.LargeTest;
 
-import de.danoeh.antennapod.core.preferences.SleepTimerPreferences;
+import com.mborowiec.antennapod.core.preferences.SleepTimerPreferences;
 import org.awaitility.Awaitility;
 import org.greenrobot.eventbus.EventBus;
 import org.junit.After;
@@ -18,15 +18,15 @@ import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
-import de.danoeh.antennapod.core.event.QueueEvent;
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.service.playback.PlaybackServiceTaskManager;
-import de.danoeh.antennapod.core.storage.DBReader;
-import de.danoeh.antennapod.core.storage.DBWriter;
-import de.danoeh.antennapod.core.storage.PodDBAdapter;
-import de.danoeh.antennapod.core.util.playback.Playable;
+import com.mborowiec.antennapod.core.event.QueueEvent;
+import com.mborowiec.antennapod.core.feed.Feed;
+import com.mborowiec.antennapod.core.feed.FeedItem;
+import com.mborowiec.antennapod.core.feed.FeedMedia;
+import com.mborowiec.antennapod.core.service.playback.PlaybackServiceTaskManager;
+import com.mborowiec.antennapod.core.storage.DBReader;
+import com.mborowiec.antennapod.core.storage.DBWriter;
+import com.mborowiec.antennapod.core.storage.PodDBAdapter;
+import com.mborowiec.antennapod.core.util.playback.Playable;
 
 import static de.test.antennapod.util.event.FeedItemEventListener.withFeedItemEventListener;
 import static org.junit.Assert.assertEquals;

@@ -1,4 +1,4 @@
-package de.danoeh.antennapod.core.cast;
+package com.mborowiec.antennapod.core.cast;
 
 import android.net.Uri;
 import android.text.TextUtils;
@@ -9,16 +9,16 @@ import com.google.android.gms.cast.MediaInfo;
 import com.google.android.gms.cast.MediaMetadata;
 import com.google.android.gms.common.images.WebImage;
 
-import de.danoeh.antennapod.core.util.playback.RemoteMedia;
+import com.mborowiec.antennapod.core.util.playback.RemoteMedia;
 import java.util.Calendar;
 import java.util.List;
 
-import de.danoeh.antennapod.core.feed.Feed;
-import de.danoeh.antennapod.core.feed.FeedItem;
-import de.danoeh.antennapod.core.feed.FeedMedia;
-import de.danoeh.antennapod.core.storage.DBReader;
-import de.danoeh.antennapod.core.util.playback.ExternalMedia;
-import de.danoeh.antennapod.core.util.playback.Playable;
+import com.mborowiec.antennapod.core.feed.Feed;
+import com.mborowiec.antennapod.core.feed.FeedItem;
+import com.mborowiec.antennapod.core.feed.FeedMedia;
+import com.mborowiec.antennapod.core.storage.DBReader;
+import com.mborowiec.antennapod.core.util.playback.ExternalMedia;
+import com.mborowiec.antennapod.core.util.playback.Playable;
 
 /**
  * Helper functions for Cast support.
@@ -28,13 +28,13 @@ public class CastUtils {
 
     private static final String TAG = "CastUtils";
 
-    public static final String KEY_MEDIA_ID = "de.danoeh.antennapod.core.cast.MediaId";
+    public static final String KEY_MEDIA_ID = "com.mborowiec.antennapod.core.cast.MediaId";
 
-    public static final String KEY_EPISODE_IDENTIFIER = "de.danoeh.antennapod.core.cast.EpisodeId";
-    public static final String KEY_EPISODE_LINK = "de.danoeh.antennapod.core.cast.EpisodeLink";
-    public static final String KEY_FEED_URL = "de.danoeh.antennapod.core.cast.FeedUrl";
-    public static final String KEY_FEED_WEBSITE = "de.danoeh.antennapod.core.cast.FeedWebsite";
-    public static final String KEY_EPISODE_NOTES = "de.danoeh.antennapod.core.cast.EpisodeNotes";
+    public static final String KEY_EPISODE_IDENTIFIER = "com.mborowiec.antennapod.core.cast.EpisodeId";
+    public static final String KEY_EPISODE_LINK = "com.mborowiec.antennapod.core.cast.EpisodeLink";
+    public static final String KEY_FEED_URL = "com.mborowiec.antennapod.core.cast.FeedUrl";
+    public static final String KEY_FEED_WEBSITE = "com.mborowiec.antennapod.core.cast.FeedWebsite";
+    public static final String KEY_EPISODE_NOTES = "com.mborowiec.antennapod.core.cast.EpisodeNotes";
     public static final int EPISODE_NOTES_MAX_LENGTH = Integer.MAX_VALUE;
 
     /**
@@ -46,7 +46,7 @@ public class CastUtils {
      * <code>MAX_VERSION_FORWARD_COMPATIBILITY</code> value set on the earlier one, so that it
      * doesn't try to parse the object.
      */
-    public static final String KEY_FORMAT_VERSION = "de.danoeh.antennapod.core.cast.FormatVersion";
+    public static final String KEY_FORMAT_VERSION = "com.mborowiec.antennapod.core.cast.FormatVersion";
     public static final int FORMAT_VERSION_VALUE = 1;
     public static final int MAX_VERSION_FORWARD_COMPATIBILITY = 9999;
 

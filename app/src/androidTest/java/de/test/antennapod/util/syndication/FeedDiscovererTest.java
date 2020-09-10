@@ -9,7 +9,7 @@ import java.io.FileOutputStream;
 import java.nio.charset.Charset;
 import java.util.Map;
 
-import de.danoeh.antennapod.core.util.syndication.FeedDiscoverer;
+import com.mborowiec.antennapod.core.util.syndication.FeedDiscoverer;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

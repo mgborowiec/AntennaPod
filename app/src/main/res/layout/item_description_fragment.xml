@@ -4,15 +4,15 @@
     android:layout_height="match_parent"
     android:fillViewport="false">
 
-    <de.danoeh.antennapod.view.NestedScrollableHost
+    <com.mborowiec.antennapod.view.NestedScrollableHost
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <de.danoeh.antennapod.view.ShownotesWebView
+        <com.mborowiec.antennapod.view.ShownotesWebView
             android:id="@+id/webview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-    </de.danoeh.antennapod.view.NestedScrollableHost>
+    </com.mborowiec.antennapod.view.NestedScrollableHost>
 
 </androidx.core.widget.NestedScrollView>
